@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "serviceActions": {
+        "twelvefactor.webapi": "StartWithoutDebugging"
+      },
+      "commandVersion": "1.0"
+    }
+  }
+}
