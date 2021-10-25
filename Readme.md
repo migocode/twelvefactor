@@ -31,6 +31,17 @@ After executing the step above (docker-compose up) and the containers are runnin
 
 http://localhost:5000/swagger/index.html
 
+Using the Open API web page, the endpoints can be tested. The following order is probably best:
+1. Sending a Post request to http://localhost:57797/Person by providing a json-object in the body, like so:
+ 
+       { "id": 0, "name": "Max Mustermann" }
+
+    This will persist the data to the database.
+
+2. Sending a Get request to http://localhost:57797/Person will retrieve all stored data from the database end return the data in the response as json.
+
+
+
 # 5 Shut down containers
 Inside of the solution folder (containing the docker-compose.yml file) execute the following command:
 
